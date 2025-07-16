@@ -1,2 +1,6 @@
 # amazon_delivery_time_prediction
-This project predicts Amazon delivery times using features like location, time, weather, and traffic. It applies XGBoost and a deep learning model (Keras Sequential) after extensive preprocessing. RMSE is used for evaluation, aiding in optimizing delivery logistics and improving ETA accuracy.
+This project focuses on predicting delivery time for Amazon orders by leveraging machine learning and deep learning models on a rich dataset comprising spatial, temporal, and contextual features. The dataset includes store and drop-off coordinates, order and pickup times, weather conditions, traffic levels, vehicle type, and delivery area. Comprehensive preprocessing steps were applied, including missing value handling, datetime parsing, feature engineering (e.g., calculating time-to-pickup), and one-hot encoding of categorical variables.
+
+Multiple regression models were implemented and evaluated, including XGBoost Regressor (XGBRegressor) and a deep learning model using the TensorFlow Keras Sequential API. These models were trained to predict delivery duration, with performance measured using Root Mean Squared Error (RMSE). The XGBoost model leveraged boosting techniques for structured feature learning, while the neural network captured complex nonlinear patterns in the data.
+
+This predictive system offers valuable insights for optimizing last-mile logistics, improving delivery efficiency, and enhancing customer satisfaction through accurate Estimated Time of Arrival (ETA) predictions.
